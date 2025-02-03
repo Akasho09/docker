@@ -28,3 +28,22 @@ The second string on runnign command (ec06a7277c2d37c7bf4f411d07e4c7679d2fea06c9
 command to connect : docker run --name aakash -e POSTGRES_PASSWORD=aakash@01234  -d -p 5432:5432 postgres
 connection string  :  postgresql://aakash:aakash@01234@localhost:5432/postgres
 
+## Dockerfile
+
+![alt text](<../Screenshot 2025-02-03 at 11.53.21 PM.png>)
+
+FROM node:20 
+
+WORKDIR  ./app
+
+COPY . .
+
+RUN npm install
+RUN npx prisma generate
+RUN npm run build
+
+EXPOSE 3000
+
+CMD ["node" , "dist/index.js"]
+
+docker build -t backend .
