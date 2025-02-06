@@ -36,6 +36,7 @@ FROM node:20
 
 WORKDIR  ./app
 
+
 COPY . .
 
 RUN npm install
@@ -46,4 +47,17 @@ EXPOSE 3000
 
 CMD ["node" , "dist/index.js"]
 
+##  
 docker build -t backend .
+
+docker run -p  3000:3000 akashbckend15
+
+<!-- docker run -it akashbckend15 /bin/bash
+
+docker exec -it 3c6892624ccd bash 
+
+docker run -d -p 3000:3000 akashbckend15
+-->
+
+docker exec -it 5ba406fe46b6 bash
+

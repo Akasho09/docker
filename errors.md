@@ -18,3 +18,16 @@ errors pretty printing info
 
  open "/Applications/Docker 2.app"
  or open docker desktop app manually
+
+
+ ## Dockerfile:1
+--------------------
+   1 | >>> FROM node:20
+   2 |     
+   3 |     WORKDIR  /app
+--------------------
+ERROR: failed to solve: node:20: failed to resolve source metadata for docker.io/library/node:20: error getting credentials - err: exec: "docker-credential-desktop": executable file not found in $PATH, out: ``
+
+
+nano ~/.docker/config.json
+"credsStore": "desktop"
