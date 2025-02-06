@@ -31,3 +31,11 @@ ERROR: failed to solve: node:20: failed to resolve source metadata for docker.io
 
 nano ~/.docker/config.json
 "credsStore": "desktop"
+
+
+## Error: P1001: Can't reach database server at `accelerate.prisma-data.net`:`5432`
+
+Please make sure your database server is running at `accelerate.prisma-data.net`:`5432`.
+
+why tf would u use prisma acclerate
+

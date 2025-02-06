@@ -61,3 +61,8 @@ docker run -d -p 3000:3000 akashbckend15
 
 docker exec -it 5ba406fe46b6 bash
 
+## make sure package.json has all dependicies
+
+
+## pass env variables at runtimee 
+docker run -p 3000:3000 p5 DATABASE_URL=""
