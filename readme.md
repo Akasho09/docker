@@ -66,3 +66,32 @@ docker exec -it 5ba406fe46b6 bash
 
 ## pass env variables at runtimee 
 docker run -p 3000:3000 p5 DATABASE_URL=""
+
+
+## Layers in docker 
+onion 
+sequentially 
+layers can be cached between images 
+
+## docker volumes 
+dbs dont persist after containner is closed.
+
+-  docker exec -it unruffled_keldysh bash
+- cd /data/db
+- ls gives all collections created.
+
+## docker networks
+to connect conatiners 
+docker network create network1
+docker network ls 
+
+
+## connecting containers
+docker run -d -v newvol1:/data/db --name mongonodbcontainer1  --network network1  -p 27017:27017 mongo
+use mongonodbcontainer1  in db_url.
+- port mappppping can be skippped. 
+
+## start original app/conatiner
+docker run  -p 3000:3000 --name whateverrr --network network1 mongopapp1
+
+## docker logs cid 
