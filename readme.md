@@ -69,7 +69,7 @@ docker run -p 3000:3000 p5 DATABASE_URL=""
 
 
 ## Layers in docker 
-onion 
+onion
 sequentially 
 layers can be cached between images 
 
@@ -95,3 +95,16 @@ use mongonodbcontainer1  in db_url.
 docker run  -p 3000:3000 --name whateverrr --network network1 mongopapp1
 
 ## docker logs cid 
+
+## tagname ~=  version
+
+
+## DOCKER push
+
+## docker compose  
+Docker Compose is a tool for defining and running multi-container applications. It is the key to unlocking a streamlined and efficient development and deployment experience.
+
+- docker compose u
+
+
+## docker bind mounts 
