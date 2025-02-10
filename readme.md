@@ -106,5 +106,9 @@ Docker Compose is a tool for defining and running multi-container applications. 
 
 - docker compose u
 
+##  docker bind mount  
 
-## docker bind mounts 
+-v ./app:/nextapp/app
+
+ ## dopcker smapples 
+ https://github.com/dockersamples
